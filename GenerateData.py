@@ -97,3 +97,8 @@ def checkLogin(cookies):
         return False
 
     return True
+
+cookies = cookiesToDict()
+
+if checkLogin(cookies):
+    getOrders(cookies)
