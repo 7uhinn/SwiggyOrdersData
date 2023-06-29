@@ -1,6 +1,6 @@
 #Sensitive Files
 cookies.json
-datafile.csv
+SwiggyOrdersData.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
