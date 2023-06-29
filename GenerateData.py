@@ -76,3 +76,24 @@ def cookiesToDict():
         return None
 
     return cookies
+
+
+def checkLogin(cookies):
+    # First check if logged in
+    print("[green][+][/green] Checking if session is valid")
+    r = requests.get(GET_ORDERS_URL, headers=HEADERS, cookies=cookies)
+    resp = None
+    try:
+        resp = json.loads(r.text)
+    except Exception as e:
+        print("[red][-] Unexpected Response received[/red]")
+        return False
+
+    if 'statusCode' not in resp or 'data' not in resp:
+        print("[red][-] Unexpected Response received[/red]")
+        return False
+    if resp['statusCode'] == 1:
+        print("[red][-] Not logged in, check cookies and try again[/red]")
+        return False
+
+    return True
