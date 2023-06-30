@@ -2,7 +2,7 @@
 
 This script extracts all Swiggy Orders data into a CSV including Order ID, Order Details, Payment Method, Amount and Restaurant information.
 
-# How to use
+## How to use
 
 The script expects you to give your Swiggy session as input.
 
@@ -17,6 +17,6 @@ The script expects you to give your Swiggy session as input.
 - Now simply run `GenerateData.py` to get swiggy orders data
 
   ```
-  python swiggy.py
+  python GenerateData.py
   ```
-
+- `SwiggyOrdersData.csv` will be generated with all data
