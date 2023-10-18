@@ -121,7 +121,7 @@ def cookiesToDict():
         with open("cookies.json", "r") as f:
             data = json.load(f)
     except Exception as e:
-        print("[red][-] [u]cookies.json[/u] not found in the path[/red]")
+        print("[red][-] [u]cookies.json[/u] not found[/red]")
         print(str(e))
         return None
 
