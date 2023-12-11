@@ -12,7 +12,7 @@ The script expects you to give your Swiggy session as input.
 - Create a new file called `cookies.json` in the same directory as the `GenerateData.py` script and paste the copied cookies into this file.
 - Install requirements with `pip`
   ```
-  pip install -r requirements.txt
+  pip3 install -r requirements.txt
   ```
 - Now simply run `GenerateData.py` to get Swiggy orders data
 
