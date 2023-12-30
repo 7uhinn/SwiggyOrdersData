@@ -19,4 +19,4 @@ The script expects you to give your Swiggy session as input.
   ```
   python GenerateData.py
   ```
-- `SwiggyOrdersData.csv` will be generated with all data
+- `SwiggyOrdersData.csv` will be generated with all required data
